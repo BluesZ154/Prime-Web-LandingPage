@@ -20,9 +20,9 @@ import porto4 from "../assets/porto4.mp4";
  ];
 
  export const statItems = [
-   { logo: <Rocket size={35} />, header: "120+", desc: "Projects Completed", text: "Berbagai jenis website berhasil kami selesaikan." },
+   { logo: <Rocket size={35} />, header: "30+", desc: "Projects Completed", text: "Berbagai jenis website berhasil kami selesaikan." },
    { logo: <Smile size={35} />, header: "98%", desc: "Client Satisfaction", text: "Kepuasan klien adalah prioritas kami." },
-   { logo: <Clock size={35} />, header: "3+", desc: "Years Experience", text: "Pengalaman membangun website profesional." },
+   { logo: <Clock size={35} />, header: "2+", desc: "Years Experience", text: "Pengalaman membangun website profesional." },
    { logo: <Headset size={35} />, header: "", desc: "Support After Launch", text: "Kami tetap siap membantu bahkan setelah website selesai." },
  ]
 

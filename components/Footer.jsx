@@ -1,8 +1,39 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import logo from "../assets/logoTransparent.png";
 import { iconFooter, contactItems, navItems } from "../constant/constant";
+import { GrSend } from "react-icons/gr";
+import emailjs from "@emailjs/browser";
 
 const Footer = () => {
+
+   const [fromEmail, setFromEmail] = useState("");
+   const [loading, setLoading] = useState(false);
+
+   const form = useRef();
+   const isFormValid = fromEmail.trim() !== "";
+
+   const sendNewsletter = async (e) => {
+      e.preventDefault();
+
+      try {
+         setLoading(true);
+
+         await emailjs.sendForm(
+            import.meta.env.VITE_SERVICE_ID,
+            import.meta.env.VITE_TEMPLATE2_ID,
+            form.current,
+            import.meta.env.VITE_PUBLIC_KEY,
+         )
+
+         alert("Berhasil berlangganan newsletter!");
+         form.current.reset();
+      } catch (error) {
+         console.error(error);
+         alert("Gagal mengirim. Silakan coba lagi.");
+      } finally {
+         setLoading(false);
+      }
+   };
 
    return (
       <div>
@@ -88,11 +119,33 @@ const Footer = () => {
                   Dapatkan tips dan insight seputar website dan digital bisnis.
                </p>
 
-               <input
-                  type="text"
-                  placeholder="Enter Your Email"
-                  className="text-sm mt-4 rounded-md border border-blue-950 p-3 text-white w-full"
-               />
+               <form
+                  onSubmit={sendNewsletter}
+                  ref={form}
+               >
+                  <div className="inline-flex gap-2 items-center justify-center mr-3">
+                     <input
+                        name="from_email"
+                        type="text"
+                        placeholder="Enter Your Email"
+                        className="text-sm mt-4 rounded-md border border-blue-950 p-3 text-white w-full"
+                        onChange={(e) => setFromEmail(e.target.value)}
+                        value={fromEmail}
+                     />
+                     <button 
+                        className={`rounded-md w-15 h-11 mt-3.5 flex items-center justify-center transition-all duration-200
+                           ${
+                           !isFormValid || loading
+                              ? "bg-gray-500 cursor-not-allowed opacity-60"
+                              : "bg-blue-600 hover:bg-blue-700 cursor-pointer"
+                           }`}
+                        type="submit"
+                        disabled={loading || !isFormValid}
+                     >
+                        <span><GrSend className="text-white"/></span>
+                     </button>
+                  </div>
+               </form>
             </div>
 
          </div>

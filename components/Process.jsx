@@ -3,9 +3,9 @@ import { processItems } from "../constant/constant";
 const Process = () => {
   return (
     <section className="py-2 mb-8 bg-white">
-      <div className="text-center mb-24">
+      <div className="text-center mb-16">
         <p className="uppercase text-blue-600 font-bold">
-          Our Process
+            Our Process
         </p>
 
         <h2 className="text-3xl font-bold mt-4">

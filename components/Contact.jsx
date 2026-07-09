@@ -26,11 +26,11 @@ const Contact = () => {
             import.meta.env.VITE_PUBLIC_KEY,
          )
 
-         alert("Message sent successfully!");
+         alert("Pesan terkirim!");
          form.current.reset();
       } catch (error) {
          console.error(error);
-         alert("Failed to send message.");
+         alert("Gagal mengirim pesan.");
       } finally {
          setLoading(false);
       }

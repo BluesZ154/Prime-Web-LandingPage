@@ -37,10 +37,10 @@ const Footer = () => {
 
    return (
       <div>
-         <div className="bg-[#02073b] h-auto lg:h-70 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 items-start px-6 lg:pr-6 py-10 lg:py-0">
+         <div className="bg-[#02073b] h-auto lg:h-70 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 items-start px-6 md:pr-7 md:pl-17 lg:pr-6 py-10 lg:py-0">
 
             <div className="mx-0 lg:mx-15 flex flex-col items-center lg:items-start text-center lg:text-left">
-               <img src={logo} alt="" className="h-27 w-45"/>
+               <img src={logo} className="h-27 w-45"/>
 
                <p className="text-neutral-300 text-sm font-normal mb-4">
                   Kami membantu bisnis Anda tampil profesional di dunia digital dengan website modern, cepat, dan efektif

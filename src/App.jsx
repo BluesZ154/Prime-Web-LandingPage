@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className='max-w-8xl pt-1 ml-20 mr-5'>
+      <div className='max-w-8xl pt-1 mx-8 lg:ml-20 lg:mr-5'>
          <section id='home'>
             <Hero />
          </section>

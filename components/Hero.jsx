@@ -5,8 +5,8 @@ const Hero = () => {
    
    return (
       <div className="flex flex-col-reverse lg:flex-row items-center mt-3 lg:mt-10">
-         <div className="flex-col ml-3 text-center lg:text-start">
-            <p className="text-xs text-blue-600 font-bold mb-4 ml-1">
+         <div className="w-full flex-col lg:ml-3 text-center lg:text-start">
+            <p className="text-xs text-blue-600 font-bold mb-4 lg:ml-1">
                PROFESSIONAL WEB SOLUTIONS
             </p>
 
@@ -17,12 +17,12 @@ const Hero = () => {
                </span>
             </h1>
 
-            <p className="text-sm mt-3 text-neutral-500 ml-1">
+            <p className="text-sm mt-3 text-neutral-500 lg:ml-1">
                Kami merancang dan membangun website modern yang cepat, aman, dan dirancang untuk meningkatkan kredibilitas bisnis Anda
             </p>
 
-            <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center my-10 ml-1 gap-4 sm:gap-0">
-               <a href="#CTA" className="w-full sm:w-auto text-center text-white rounded-md bg-blue-600 px-4 py-3 mr-7
+            <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center my-10 lg:ml-1 gap-4 sm:gap-0 md:gap-3">
+               <a href="#CTA" className="w-full sm:w-auto text-center text-white rounded-md bg-blue-600 px-4 py-3 lg:mr-7 lg:px-6 lg:py-4
                   transition-all duration-300 ease-out
 
                   hover:bg-blue-700
@@ -35,7 +35,7 @@ const Hero = () => {
                   Start your project
                </a>
 
-               <a href="#portofolio" className="w-full sm:w-auto text-center font-bold border border-blue-600 text-blue-600 px-4 py-3 mx-3 rounded-md border-2
+               <a href="#portofolio" className="w-full sm:w-auto text-center font-bold border-blue-600 text-blue-600 px-4 py-3 lg:mx-3 rounded-md border-2 lg:px-6 lg:py-3.5
                   transition-all duration-300 ease-out
 
                   hover:bg-blue-500

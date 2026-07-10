@@ -5,7 +5,7 @@ const WhyChooseUs = () => {
 
    return (
       <div className="flex justify-center px-5 lg:px-0">
-         <div className="bg-[#0C0233] h-auto lg:h-80 w-full lg:w-350 mb-20 rounded-2xl">
+         <div className="bg-[#0C0233] lg:h-80 w-full h-263 md:h-150 lg:w-350 mb-20 rounded-2xl">
             <div className="flex flex-col lg:flex-row justify-around items-start mt-12 px-6 lg:pr-5 lg:pl-13">
 
                <div className="container w-full lg:w-180 flex flex-col justify-center items-center lg:items-start text-center lg:text-left mb-10 lg:mb-0 mr-0 lg:mr-4">

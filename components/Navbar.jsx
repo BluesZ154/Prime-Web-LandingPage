@@ -19,7 +19,7 @@ const Navbar = () => {
                <img
                   src={logo}
                   alt="Prime Web"
-                  className="h-20 lg:h-26 w-auto 
+                  className="h-20 lg:h-26 md:h-30 md:mt-2.5 w-auto 
                      transition-transform
                      duration-300
                      
